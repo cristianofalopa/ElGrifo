@@ -5,6 +5,7 @@
 
 body {
     display: flex;
+    flex-wrap: wrap;
     background-color: #111111;
 }
 
@@ -52,6 +53,167 @@ a:visited {
 a:hover {
     font-weight: 700;
 }
-/* .hero {
+
+.hero {
     display: flex;
-} */
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    overflow: hidden;
+}
+
+.hero-text {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 40%;
+}
+
+.hero-text h1 {
+    font-size: 2.0em;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+}
+
+.hero-buttons {
+    display: inline-flex;
+}
+
+.hero-text button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: 30px;
+    margin: 30px 10px;
+    color: white;
+    border: white 2px solid;
+    background-color: #111111;
+    border-radius: 15px;
+}
+
+.hero-text button:hover {
+    background-color: white;
+    color: #111111;
+}
+
+.hero-img {
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.introduction div {
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 985px) {
+    .hero {
+        justify-content: center;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-text button {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: 0px;
+        margin-top: 20px;
+    }
+
+    .hero-text img {
+        max-block-size: 400px;
+    }
+}
+
+@media (max-width: 750px) {
+    header {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .logo {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu li {
+        margin-top: 5px;
+    }
+
+    .hero {
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        overflow: visible;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hero-text {
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero img {
+        display: none;
+    }
+
+    .introduction h2 {
+        font-size: 1.2em;
+        max-width: 100%;
+    }
+
+    .introduction div {
+        max-width: 100%;
+    }
+
+}
