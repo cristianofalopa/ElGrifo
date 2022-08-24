@@ -114,6 +114,12 @@ a:hover {
     width: 100%;
 }
 
+.introduction h2 {
+    font-size: 1.1em;
+    text-align: center;
+    font-style: italic;
+}
+
 .introduction div {
     max-width: 40%;
     display: flex;
@@ -125,6 +131,78 @@ a:hover {
 hr {
     width: 100%;
     margin-bottom: 20px;
+}
+
+.hero-cards {
+    color: white;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hero-cards h2 {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.hero-cards p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.card {
+    width: 350px;
+}
+
+.card h2 {
+    margin: 15px 0px;
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+}
+
+.card p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.fa {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+@keyframes expandir {
+    from {}
+
+    to {
+        transform: scale(1.1, 1.1);
+    }
+}
+
+.card:hover {
+    border: 3px white solid;
+    border-radius: 20px;
+    animation-name: expandir;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 @media (max-width: 985px) {
