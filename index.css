@@ -201,7 +201,7 @@ hr {
     border: 3px white solid;
     border-radius: 20px;
     animation-name: expandir;
-    animation-duration: 0.7s;
+    animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
@@ -246,6 +246,7 @@ hr {
     width: 100%;
     justify-content: space-around;
     list-style: none;
+    align-items: flex-end;
 }
 
 .contact-datos i {
@@ -280,6 +281,7 @@ footer {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .hero-text {
         width: 100%;
         flex-wrap: wrap;
@@ -303,10 +305,9 @@ footer {
     .contact-footer img {
         display: none;
     }
-
 }
 
-@media (max-width: 750px) {
+@media (max-width: 768px) {
     header {
         flex-direction: column;
         flex-wrap: wrap;
@@ -376,6 +377,20 @@ footer {
 
     .contact-footer img {
         display: none;
+    }
+
+    @media (max-width: 425px) {
+        .cards {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+        }
+        .hero-cards {
+            text-align: center;
+        }
     }
 
 
